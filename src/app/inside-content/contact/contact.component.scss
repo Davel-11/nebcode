@@ -1,0 +1,64 @@
+@import '../../../style.scss';
+
+
+.contact {
+    padding: 15px;
+    background: none;
+    min-height: 100%;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-content {
+        
+    width: 70%;
+
+    padding: 20px;
+
+    border-style: solid;
+    border-color: $primary-color;
+    //border-radius: 10px;
+    border-width: thin;
+}
+
+.form-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.titles-data {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: $primary-color;
+}
+
+
+@media (max-width: 768px) {
+
+    .contact-content {
+    
+        width: 100%;    
+    
+        padding: 10px;
+    
+        border-style: solid;
+        border-color: $primary-color;
+        //border-radius: 10px;
+    }
+}
+
+.completed {
+    border-style: solid;
+    border-width: thick;
+    border-color: $primary-color;
+    border-radius: 10px;
+    color: $secondary-text-color;
+
+    display: flex;
+    justify-content: center;
+}

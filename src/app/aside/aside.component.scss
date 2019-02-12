@@ -1,0 +1,20 @@
+@import '../../style.scss';
+
+.aside{
+    background: $secondary-color;
+    //height: 100%;
+}
+
+.orden:hover{
+      
+}
+
+.aside-option {
+    cursor: pointer;
+    color: white;
+}
+
+.aside-option:hover {
+    background: white;
+    color: black;
+}

@@ -1,0 +1,70 @@
+
+
+<div class="contact">
+
+   
+
+<div class="contact-content">
+
+    <h3 class="titles-data text-center" >Contactanos!</h3>
+    <mat-divider></mat-divider>
+    
+  <br>
+  
+  <form [formGroup]="form">
+
+    <mat-form-field  class="form-field">
+      <input matInput
+        placeholder="Nombre"
+        formControlName="name"
+        required>        
+    </mat-form-field>
+
+    <mat-form-field  class="form-field">
+      <input matInput
+        placeholder="Telefonó"
+        formControlName="phone"
+        required>        
+    </mat-form-field>
+
+
+    <mat-form-field  class="form-field" >
+      <input matInput
+        placeholder="Correo"
+        formControlName="email">  
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-select placeholder="Programa de Interés" formControlName="program" required>
+         
+        <mat-option *ngFor="let i of interestProgram" value="{{i.name}}">
+          {{ i.name }}
+        </mat-option>
+
+      </mat-select>
+    </mat-form-field>
+
+
+    <mat-form-field  class="form-field" appearance="outline">
+        <mat-label>Comentarios</mat-label>
+      <textarea matInput
+        placeholder="Comentarios"
+        formControlName="comments"> 
+      </textarea>
+    </mat-form-field>
+
+
+    <button mat-flat-button
+      (click)="SubmitForm(); openSnackBar()"
+      [disabled]="!form.valid">
+      Enviar
+    </button>
+
+  </form>
+
+ 
+  
+</div>
+
+
+</div>

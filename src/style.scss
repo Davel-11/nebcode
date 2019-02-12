@@ -1,0 +1,22 @@
+$primary-color: #1e2228;
+$primary-text-color: white;
+
+$secondary-color: #ffff05;
+$secondary-text-color: #1e2228;
+
+$third-color: #545d60;
+$third-text-color: #545d60;
+
+
+$content-color: #e6e8ed;
+$links-color: black;
+
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.titles {
+    color: $primary-color;
+    display: flex;
+    justify-content: center;    
+}
