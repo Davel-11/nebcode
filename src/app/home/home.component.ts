@@ -36,9 +36,9 @@ export class HomeComponent implements OnInit {
 
     setTimeout(()=>{        
 
-      console.log("1"+this.home1);
-      console.log("2"+this.home2);
-      console.log("3"+this.home2);
+      // console.log("1"+this.home1);
+      // console.log("2"+this.home2);
+      // console.log("3"+this.home2);
 
       if(this.home1) {
         this.resetValues()
@@ -60,15 +60,15 @@ export class HomeComponent implements OnInit {
 
       else if(this.home4) {
         this.resetValues()
-        this.home5 = true;    
-        this.changePic(); 
-      } 
-
-      else if(this.home5) {
-        this.resetValues()
         this.home1 = true;    
         this.changePic(); 
       } 
+
+      // else if(this.home5) {
+      //   this.resetValues()
+      //   this.home1 = true;    
+      //   this.changePic(); 
+      // } 
 
     }, 5000 )
 
