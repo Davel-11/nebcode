@@ -4,10 +4,13 @@
     height: 100%;
     
     background-color: $primary-color;
+
     color: $primary-text-color; 
     
     display: flex;
     align-items: center;
+
+    
 
     
     .mat-icons {
@@ -64,6 +67,13 @@
          p {
             color: $secondary-text-color;
         } 
+
+        -o-transition: background 0.35s ease-in;
+        -ms-transition: background 0.35s ease-in;
+        -moz-transition: background 0.35s ease-in;
+        -webkit-transition: background 0.35s ease-in;
+        /* ...and now override with proper CSS property */
+        transition: background 0.35s ease-in;
      }    
  
 
@@ -124,7 +134,7 @@
 .menu-phone-hidden {
     width: 100%;
     min-height: 100px;
-    background: $third-color;
+    background: $third-color;    
     color: white;
 
     a:link {
@@ -150,22 +160,31 @@
     .color-links {
         color: $primary-text-color;
     }
+
+    -o-transition: background 0.20s ease-in;
+    -ms-transition: background 0.20s ease-in;
+    -moz-transition: background 0.20s ease-in;
+    -webkit-transition: background 0.20s ease-in;
+    /* ...and now override with proper CSS property */
+    transition: background 0.20s ease-in;
 }
     
 
 .matMenu  {
-    top: 160px;
-    background: black;
+    //top: 160px;
+    //background: black;
+    //opacity: 0.10;
 }
 
 .menu-more-hidden {
-    width: 100%;
+    width: 35%;
     min-height: 100px;
     background: $secondary-color;
     color: $secondary-text-color;
+    
 
-    right: 0px;
-
+    right: 0px !important;
+    position: absolute;
 
     a:link {
         text-decoration: none;

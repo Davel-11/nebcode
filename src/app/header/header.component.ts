@@ -28,10 +28,10 @@ export class HeaderComponent implements OnInit {
 
   hederRight1 = 'Contacto';
   hederRight2 = 'Precio';
-  hederRight3 = 'Ubucaciones (de tu Negocio)';
+  hederRight3 = 'Ubucaciones';
   hederRight4 = 'Información Adicional';
   
-  mainName = "Nebulosa - Code";
+  mainName = "Nebulosa </Code>";
 
   isActive = {
     contact : false,

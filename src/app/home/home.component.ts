@@ -21,6 +21,25 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
+  let Objet = { 
+    mes: 'Enero'
+   }
+
+  let variable = 'apple'
+  let variable2 = 'orange'
+  let variabl3 = 'strawberry'
+  let variable4 = 'grapes'
+
+
+  Objet[variable] = '15.00';
+  Objet[variable2] = '25.00';
+  Objet[variabl3] = '35.00';
+  Objet[variable4] = '45.00';
+
+
+  console.log('el Ob es', Objet );
+
+
   this.home1 = true;
   this.home2 = false;
   this.home3 = false;
