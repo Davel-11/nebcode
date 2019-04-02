@@ -11,8 +11,6 @@ export interface IsActive {
   material: boolean,
 }
 
-
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -23,12 +21,12 @@ export class HeaderComponent implements OnInit {
 
   more1 = 'Información sobre algunos de tus productos ';
   more2 = 'Aqui puedes poner otros datos relevantes';
-  more3 = 'Nostros';
+  more3 = 'Nosotros';
   more4 = 'Mas Información';
 
   hederRight1 = 'Contacto';
   hederRight2 = 'Precio';
-  hederRight3 = 'Ubucaciones';
+  hederRight3 = 'Ubicaciones';
   hederRight4 = 'Información Adicional';
   
   mainName = "Nebulosa </Code>";

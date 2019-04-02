@@ -1,7 +1,12 @@
 <div class="header-main">
 
     <div class="menu-left" (click)="isActiveEvent(0)">
-        <a routerLink=""><h3> {{mainName}} </h3></a>
+        <a routerLink=""> 
+        <img src="assets/images/header/nebcode.png"
+                alt="English on GT"
+                class="home-image"
+                style="height: 60px">
+        </a>
     </div>
 
     <div class=" menu-right">
@@ -10,9 +15,8 @@
             <div class="col-sm-3 col-3 col-lg-3 col-xl-3 menu-right-link"
                 [ngClass]="{'isActive' : isActive.contact }"
                 (click)="isActiveEvent(1);">
-                        <strong>
+                        
                             <p > {{ hederRight1 }} </p>
-                        </strong>
             </div>
             </a>
             
@@ -21,9 +25,9 @@
                  [ngClass]="{'isActive' : isActive.info }"
                  (click)="isActiveEvent(2)">
                     
-                        <strong>
+                        
                             <p > {{ hederRight2 }} </p>
-                        </strong>
+                        
                     
             </div>
             </a>
@@ -33,9 +37,9 @@
                 [ngClass]="{'isActive' : isActive.location }"
                  (click)="isActiveEvent(3)">
                     
-                        <strong>
+                        
                             <p > {{ hederRight3 }} </p>
-                        </strong>
+                        
             </div>
             </a>
 
@@ -43,9 +47,9 @@
             <div class="col-sm-3 col-3 col-lg-3 col-xl-3 menu-right-link"
                 (click)="showMoreOptions(); isActiveEvent(4)">
                    
-                        <strong>
+                        
                             <p > {{ hederRight4 }} </p>
-                        </strong>
+                        
                    
             </div>
 
@@ -53,7 +57,10 @@
 
     <div class="menu-phone-2">
         <a routerLink="" >
-            <label> {{mainName}} </label>
+            <img src="assets/images/header/nebcode.png"
+            alt="English on GT"
+            class="home-image"
+            style="height: 60px">
         </a>
     </div>
 
@@ -74,9 +81,9 @@
                         <a routerLink="/contact" 
                             class="a-width" 
                             (click)="showMenuPhone();"> 
-                            <strong>
+                            
                                 <p class="color-links"> {{ hederRight1 }} </p>
-                            </strong>
+                            
                          </a>                  
                 </mat-list-item>
                 <mat-divider></mat-divider>
@@ -85,9 +92,9 @@
                         <a routerLink="/pricing" 
                         class="a-width"
                         (click)="showMenuPhone()"> 
-                            <strong>
+                            
                                 <p class="color-links"> {{ hederRight2 }} </p>
-                            </strong>
+                            
                          </a> 
                 </mat-list-item>
                 <mat-divider></mat-divider>
@@ -96,9 +103,9 @@
                         <a routerLink="/location"                         
                             class="a-width"
                             (click)="showMenuPhone()"> 
-                            <strong>
+                            
                                 <p class="color-links"> {{ hederRight3 }} </p>
-                            </strong>
+                            
                          </a> 
                 </mat-list-item>                
                 <mat-divider></mat-divider>                
@@ -107,9 +114,9 @@
                         <a routerLink="/ups-building" 
                             class="a-width"
                             (click)="showMenuPhone(); showMoreOptions()"> 
-                            <strong>
+                            
                                 <p class="color-links"> {{ hederRight4 }} </p>
-                            </strong>
+                            
                          </a> 
                 </mat-list-item>
                 <mat-divider></mat-divider>                
@@ -122,9 +129,9 @@
                         <a routerLink="/ups-building" 
                             class="a-width" 
                             (click)="showMoreOptions()"> 
-                            <strong>
+                            
                                 <p class="color-links"> {{ more1 }} </p>
-                            </strong>
+                            
                          </a>                  
                 </mat-list-item>
                 <mat-divider></mat-divider>
@@ -133,9 +140,9 @@
                         <a routerLink="/ups-building" 
                         class="a-width"
                         (click)="showMoreOptions()"> 
-                            <strong>
+                            
                                 <p class="color-links"> {{ more2 }} </p>
-                            </strong>
+                            
                          </a> 
                 </mat-list-item>
                 <mat-divider></mat-divider>
@@ -144,9 +151,9 @@
                         <a routerLink="/ups-building" 
                             class="a-width"
                             (click)="showMoreOptions()"> 
-                            <strong>
+                            
                                 <p class="color-links"> {{ more3 }} </p>
-                            </strong>
+                            
                          </a> 
                 </mat-list-item>  
 
@@ -157,9 +164,9 @@
                         <a routerLink="/ups-building" 
                             class="a-width"
                             (click)="showMoreOptions()"> 
-                            <strong>
+                            
                                 <p class="color-links"> {{ more4 }} </p>
-                            </strong>
+                            
                          </a> 
                 </mat-list-item>
                 <mat-divider></mat-divider>                
